@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import {useDispatch, useSelector} from "react-redux"
 import { RootStore } from './store';
@@ -13,26 +13,37 @@ const dispatch = useDispatch()
   const handleSubmit = () => dispatch(GetBlogPost(blogPostName))
   console.log("blogPostState state:", blogPostState.blogPost);
 
-  //console.log(blogPostState)
+  useEffect(() => {
+    dispatch(GetBlogPost(blogPostName))
+  }, [])
   return (
     <div className="App">
-      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum consequatur  esse maiores molestias non aliquid.</div>
+      <div className="header">
+       <p className="blog_app">Blog app Test</p>
+      </div>
+      <input className="input" type="text" onChange={handleChange} />
+      <button className="button"onClick={handleSubmit}>Search</button>
+      {/*{blogPostState === undefined ? <h1>Loading...</h1> :
+
+        console.log('data: ', blogPostState)
+}*/}
      
-      <input type="text" onChange={handleChange} />
-      <button onClick={handleSubmit}>Search</button>
-      {/*{blogPostState.blogPost && (<div>
-        {blogPostState.blogPost.posts.map(post => {
+      {blogPostState.blogPost !== undefined && (<div>
+        {blogPostState.blogPost.map((post,index) => {
           return (
-            <div >
-              <p> {post.id}</p>
-              <p>{post.userId}</p>
+            <div key={index}>
               <p>{post.title}</p>
               <p>{post.body}</p>
+
+              {/*<p> {post.id}</p>*/}  
+              {/*<p>{post.userId}</p>*/}
+             
+             
             </div>
 
           )  
         })}
-     </div>)}*/}
+     </div>)}
       
     </div>
   );

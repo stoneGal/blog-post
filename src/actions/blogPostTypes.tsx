@@ -4,11 +4,11 @@ export const BLOGPOST_LOADING = " BLOGPOST_LOADING";
 export const BLOGPOST_FAIL = " BLOGPOST_FAIL";
 export const BLOGPOST_SUCCESS = " BLOGPOST_SUCCESS";
 
-
-export type BlogPostType = {
-    posts: BlogPosts[],
-    //images: BlogPostImages
-}
+//images: BlogPostImages
+//export type BlogPostType:any = {
+//    posts: BlogPosts[],
+    
+//}
 export type BlogPosts = {
     userId: number,
     id: number,
@@ -29,7 +29,7 @@ export interface BlogPostFail {
 
 export interface BlogPostSuccess{
     type: typeof BLOGPOST_SUCCESS,
-    payload: BlogPostType
+    payload: BlogPosts[]
 }
 
 export type BlogPostDispatchTypes = BlogPostLoading | BlogPostFail | BlogPostSuccess 

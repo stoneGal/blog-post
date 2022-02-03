@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }*/
+
+.App {
+    /*background-color: #151212;*/
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #282c34;
+    display: flex;
+    color: white;
+    padding: 0.3rem;
+}
+
+.blog_app {
+    font-weight: 800;
+    font-style: italic;
+}
+
+.input {
+    border: none;
+    padding: 0.4rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+.button {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}

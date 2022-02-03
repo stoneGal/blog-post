@@ -1,10 +1,10 @@
-import { BlogPostType, BlogPostDispatchTypes, BLOGPOST_SUCCESS, BLOGPOST_LOADING, BLOGPOST_FAIL} from "../actions/blogPostTypes"
+import { BlogPosts, BlogPostDispatchTypes, BLOGPOST_SUCCESS, BLOGPOST_LOADING, BLOGPOST_FAIL} from "../actions/blogPostTypes"
 
 
 
 interface DefaultSateI { 
     loading: boolean,
-    blogPost?: BlogPostType
+    blogPost?: BlogPosts[]
 }
 
 const defaultState: DefaultSateI = {
