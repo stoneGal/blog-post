@@ -20,7 +20,7 @@ const dispatch = useDispatch()
      
       <input type="text" onChange={handleChange} />
       <button onClick={handleSubmit}>Search</button>
-      {blogPostState.blogPost && (<div>
+      {/*{blogPostState.blogPost && (<div>
         {blogPostState.blogPost.posts.map(post => {
           return (
             <div >
@@ -32,7 +32,7 @@ const dispatch = useDispatch()
 
           )  
         })}
-     </div>)}
+     </div>)}*/}
       
     </div>
   );

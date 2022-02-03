@@ -8,7 +8,8 @@ interface DefaultSateI {
 }
 
 const defaultState: DefaultSateI = {
-    loading: false
+    loading: false,
+    
 }
 
 const blogPostReducer = (state: DefaultSateI = defaultState, action: BlogPostDispatchTypes): DefaultSateI => {
