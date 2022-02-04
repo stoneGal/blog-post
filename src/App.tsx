@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useDispatch, useSelector } from "react-redux"
 import { RootStore } from './store';
 import { GetBlogPost } from './actions/blogPostAction';
-import { Row, Col, Card } from 'react-bootstrap';
+import { Container,Row, Col, Card } from 'react-bootstrap';
 import './App.css';
 
 
@@ -39,7 +39,16 @@ const App = () => {
           {/*<button className="button" >Search</button>*/}
         </div>
         {blogPostNameData && blogPostNameData?.length === 0 && (
-          <div className="notFound"> WHOOPPPSSY!!! No Blog Post Found</div>
+         
+            <Container>
+            <Row>
+              <div className="notFound" >
+                <Col md={{ span: 6, offset: 3 }}> <h2 className="inner_text"> No Blog Post Found!!</h2> </Col>
+                </div>
+              </Row>
+            </Container>
+            
+          
         )}
 
         {blogPostNameData !== undefined && (<div>

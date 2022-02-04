@@ -37,7 +37,8 @@
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-    margin-right: 2rem;
+    /*margin-right: 2rem;*/
+    margin-bottom: 5rem;
     outline: none
 }
 
@@ -53,16 +54,19 @@
 }*/
 
 .notFound {
+    border: 1px solid white;
+    margin-top: 7rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.inner_text {
     text-align: center;
     color: white;
-    border: 1px solid white;
-    padding: 2rem 3rem;
-    margin: 5rem 25rem;
-    border-radius: 1px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
+    padding: 2rem;
 }
 
 .card {
