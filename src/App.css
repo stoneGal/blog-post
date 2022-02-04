@@ -49,13 +49,28 @@
     padding: 0.3rem;
 }
 
+.body-wrap {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.input_type {
+    display: flex;
+    justify-content: center;
+    padding-top: 4.5rem;
+}
+
 .blog_app {
     font-weight: 800;
     font-style: italic;
 }
 
 .input {
-    border: none;
+    border: 1px solid #282c34;
     padding: 0.4rem 2rem;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -63,6 +78,7 @@
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     margin-right: 2rem;
+    outline: none
 }
 
 .button {
@@ -73,4 +89,9 @@
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 3rem 1.5rem;
 }
