@@ -4,7 +4,8 @@ import { BlogPosts, BlogPostDispatchTypes, BLOGPOST_SUCCESS, BLOGPOST_LOADING, B
 
 interface DefaultSateI { 
     loading: boolean,
-    blogPost?: BlogPosts[]
+    blogPost?: BlogPosts[],
+   
 }
 
 const defaultState: DefaultSateI = {

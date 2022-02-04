@@ -1,5 +1,4 @@
 
-
 export const BLOGPOST_LOADING = " BLOGPOST_LOADING";
 export const BLOGPOST_FAIL = " BLOGPOST_FAIL";
 export const BLOGPOST_SUCCESS = " BLOGPOST_SUCCESS";
@@ -25,7 +24,9 @@ export interface BlogPostFail {
 
 export interface BlogPostSuccess{
     type: typeof BLOGPOST_SUCCESS,
-    payload: BlogPosts[]
+    payload: BlogPosts[],
+    
 }
+
 
 export type BlogPostDispatchTypes = BlogPostLoading | BlogPostFail | BlogPostSuccess 

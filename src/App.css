@@ -11,9 +11,9 @@
 
 .header {
     background-color: #282c34;
-    display: flex;
+    /*display: flex;*/
     color: white;
-    padding: 0.3rem;
+    padding: 0.4rem;
 }
 
 .input_type {
@@ -23,8 +23,10 @@
 }
 
 .blog_app {
-    font-weight: 800;
-    font-style: italic;
+    font-weight: 900;
+    font-style: bold;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .input {
