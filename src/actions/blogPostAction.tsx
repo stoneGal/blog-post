@@ -10,7 +10,7 @@ export const GetBlogPost = (blogPost:string) => async (dispatch: Dispatch<BlogPo
         })
 
         const res = await axios.get(`https://jsonplaceholder.typicode.com/posts ${blogPost}`);
-        //const res1 = await axios.get(`https://picsum.photos/ ${imagePost}`);
+        //const res1 = await axios.get(`https://picsum.photos/v2/list ${imagePost}`);
 
         dispatch({
             type: BLOGPOST_SUCCESS,

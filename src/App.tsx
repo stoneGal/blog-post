@@ -60,7 +60,7 @@ const App = () => {
                   {Array.from({ length: 4 }).map((_, idx) => (
                     <Col>
                       <Card className="card">
-                        <Card.Img variant="top" src="https://picsum.photos/" />
+                        <Card.Img variant="top" src="hhttps://picsum.photos/200/300" />
                         <Card.Body>
                           <Card.Title className="">Title: {post.title}</Card.Title>
                           <Card.Text>
